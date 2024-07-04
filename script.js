@@ -1,18 +1,72 @@
-const initSlider = () => {
-    const list = document.querySelector(".carousel .carousel-list");
-    let currentIndex = 0;
+/*document.addEventListener('DOMContentLoaded', function () {
+    const config = {
+        type: 'carousel',
+        perView: 2,
+        600: {
+            perView: 1
+        }
+    }
+    new Glide(".glide", config).mount();
+});*/
 
-    console.log(list); // Verify this is not null
-    const slideButtons = document.querySelectorAll(".carousel .slide-button");
-    console.log(slideButtons); // Verify this is a NodeList with length 2
+const config = {
+    type: 'carousel',
+    perView: 2,
+    600: {
+        perView: 1
+    }
+}
 
-    slideButtons.forEach(button => {
-        button.addEventListener("click", () => {
-            const direction = button.id === "prev-slide" ? -1 : 1;
-            const scrollAmount = imageList.clientWidth * direction;
-            imageList.scrollBy({ left: scrollAmount, behavior: "smooth" });
-        });
-    });
-};
+let glide = null;
 
-window.addEventListener("load", initSlider);
+function applyFlexStyles() {
+  document.querySelectorAll('.glide__slides').forEach(slides => {
+    slides.style.display = 'flex';
+    slides.style.flexDirection = 'column';
+    slides.style.alignItems = 'center';
+      slides.style.justifyContent = 'space-between';
+      slides.style.marginRight = '0';
+      
+  });
+}
+
+function removeFlexStyles() {
+  document.querySelectorAll('.glide__slides').forEach(slides => {
+    slides.style.display = '';
+    slides.style.flexDirection = '';
+    slides.style.alignItems = '';
+    slides.style.justifyContent = '';
+    slides.style.height = '';
+    slides.style.textAlign = '';
+  });
+}
+
+function initializeGlide() {
+  glide = new Glide(".glide", config).mount();
+  glide.mount();
+}
+
+function destroyGlide() {
+  if (glide) {
+    glide.destroy();
+    glide = null;
+  }
+}
+
+function checkScreenWidth() {
+  if (window.innerWidth <= 600) {
+    destroyGlide();
+    applyFlexStyles();
+  } else {
+    removeFlexStyles();
+    if (!glide) {
+      initializeGlide();
+    }
+  }
+}
+
+// Initial check
+checkScreenWidth();
+
+// Handle resize event
+window.addEventListener('resize', checkScreenWidth);
