@@ -23,7 +23,7 @@
         font-size: 5vw;
     }
     .navbar-left, .navbar-icons{
-        gap:20%;
+        gap:3vw;
     }
     .navbar-icons{
         width: 3vw;
