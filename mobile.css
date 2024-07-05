@@ -1,5 +1,11 @@
 @media (max-width: 600px) {
 
+    .navbar{
+        display: none;
+    }
+    .footer{
+        display: none;
+    }
     .nav-mobile{
         box-sizing: border-box;
         width: 100%;

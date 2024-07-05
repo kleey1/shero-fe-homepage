@@ -121,6 +121,9 @@ input::placeholder{
 .navbar a:hover{
     color:#b0967b;
 }
+.nav-mobile{
+    display: none;
+}
 
 /*============================= GENERAL ============================================================*/
 .text-size{
@@ -503,4 +506,8 @@ footer .grid5 .title{
 
 .copyright{
     font-family:'Times New Roman', Times, serif;
+}
+
+.footer-mobile{
+    display: none;
 }
