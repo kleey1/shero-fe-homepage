@@ -134,6 +134,9 @@
         flex-direction: column;
         width: 100vw;
     }
+    .top-section .description-text{
+        width: 70vw;
+    }
     .curated-selections{
         font-size: 9vw;
     }
