@@ -26,7 +26,7 @@ html, body {
 
 .navbar-left{
     display: flex;
-    margin-left: 20px;
+    margin-left: 2%;
 }
 .navbar-center{
     display:flex;
@@ -37,7 +37,7 @@ html, body {
     display:flex;
     justify-content: space-between;
     gap:10px;
-    margin-right: 10%;
+    margin-right: 2%;
 }
 
 .navbar-search{
@@ -85,10 +85,6 @@ input::placeholder{
     align-items: center;
     flex-direction: row;
     gap:0.8vw;
-}
-
-.nav-mobile{
-    display: none;
 }
 
 /*============================= GENERAL ============================================================*/
@@ -456,10 +452,6 @@ footer .grid5 .title{
 }
 .footer .icon{
     width: 1.5vw;
-}
-
-.footer-mobile{
-    display: none;
 }
 
 .copyright{

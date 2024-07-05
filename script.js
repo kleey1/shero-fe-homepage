@@ -53,6 +53,30 @@ function destroyGlide() {
   }
 }
 
+function updateFooter() {
+  const footer = document.querySelector('.footer');
+  const footerMobile = document.querySelector('.footer-mobile');  if (window.innerWidth < 600) {
+      // Change footer to mobile version
+      footer.style.display = 'none';
+      footerMobile.style.display = 'flex';
+  } else {
+    footer.style.display = 'flex';
+    footerMobile.style.display = 'none';
+  }
+}
+
+function updateNavbar() {
+  const nav = document.querySelector('.navbar');
+  const navMobile = document.querySelector('.nav-mobile');  if (window.innerWidth < 600) {
+      // Change footer to mobile version
+      nav.style.display = 'none';
+      navMobile.style.display = 'flex';
+  } else {
+    nav.style.display = 'flex';
+    navMobile.style.display = 'none';
+  }
+}
+
 function checkScreenWidth() {
   if (window.innerWidth <= 600) {
     destroyGlide();
@@ -63,6 +87,8 @@ function checkScreenWidth() {
       initializeGlide();
     }
   }
+  updateFooter();
+  updateNavbar()
 }
 
 // Initial check

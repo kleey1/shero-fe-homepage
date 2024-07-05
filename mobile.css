@@ -1,7 +1,5 @@
 @media (max-width: 600px) {
-    .navbar{
-        display: none;
-    }
+
     .nav-mobile{
         box-sizing: border-box;
         width: 100%;
@@ -27,6 +25,9 @@
     }
     .navbar-icons{
         width: 3vw;
+    }
+    .navbar-right{
+        margin-right: 10%;
     }
 
     .text-size{
@@ -123,9 +124,6 @@
         flex-direction: column;
     }
 
-    .footer{
-        display: none;
-    }
     .footer-mobile{
         display: flex;
         flex-direction: column;
