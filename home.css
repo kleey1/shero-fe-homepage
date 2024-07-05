@@ -78,13 +78,48 @@ input::placeholder{
 
 .icon{
     width: 1.5vw;
+    padding: 0.5vw;
 }
 
 .navbar-icons{
     display: flex;
     align-items: center;
     flex-direction: row;
-    gap:0.8vw;
+    gap:0.4vw;
+    transition: background-color 0.5s, color 0.5s, border 0.3s;
+}
+.navbar .icon:hover{
+    background-color: #b0967b41;
+    border-radius: 40%;
+    cursor: pointer;
+}
+
+.bag{
+    position: relative;
+}
+.bag-icon{
+    position: absolute;
+    top: 0%;
+    right: 1%;
+    width: 1.3vw;
+}
+.text-overlay {
+    position: absolute;
+    top: 25%;
+    right: 4%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255);
+    font-size: 1.1vw;
+    z-index: 1000;
+}
+
+.navbar a{
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s, border 0.3s;
+    color:#1b1a1a;
+}
+.navbar a:hover{
+    color:#b0967b;
 }
 
 /*============================= GENERAL ============================================================*/
@@ -101,6 +136,11 @@ input::placeholder{
     padding: 20px;
     font-size: 1vw;
     padding: 5%;
+    transition: box-shadow 0.3s, color 0.3s, border 0.3s;
+}
+.btn-general:hover{
+    box-shadow:8px 8px #eae9e9;
+    cursor: pointer;
 }
 
 .item{ /*contains basic positioning and font size*/
@@ -161,6 +201,11 @@ input::placeholder{
    padding: 1vw;
    border: none;
    font-size: 1vw;
+   transition: background-color 0.3s, color 0.3s, border 0.3s;
+}
+.top-section button:hover{
+    background-color: #dfbc97;
+    cursor: pointer;
 }
 
 .top-section .top-buttons{
@@ -291,6 +336,7 @@ input::placeholder{
     margin-left: 5%;
     margin-right: 5%;
     justify-content: space-between;
+    padding-bottom: 2vw;
 }
 
 .grid1 .item .description .title{
@@ -299,9 +345,10 @@ input::placeholder{
 
 .learn-more{
     color: #997660;
+    text-decoration: none;
 }
 .learn-more img{
-    width: 1.3vw;
+    width: 1.2vw;
 }
 
 /*============================= SECTION-3 ============================================================*/
