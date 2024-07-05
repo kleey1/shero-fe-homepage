@@ -32,6 +32,9 @@
     .text-size{
         font-size: 3vw;
     }
+    .description-box .title{
+        font-size: 5vw;
+    }
     .content{
         width: 100%;
         display: flex;
@@ -63,6 +66,9 @@
     }
     .grid1 .item, .grid2 .item, .grid4 .item{
         height: 90vw;
+    }
+    .grid1 .item .description .title{
+        font-size: 4vw;
     }
     .grid3{
         grid-template-columns: repeat(2, 1fr);
