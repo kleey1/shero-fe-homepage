@@ -11,6 +11,7 @@
 
 const config = {
     type: 'carousel',
+    gap: 0,
     perView: 2,
     600: {
         perView: 1

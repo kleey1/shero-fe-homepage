@@ -29,7 +29,7 @@
         <div class="navbar-right">
             <div class="navbar-search">
                 <input id="search-text" type="search" placeholder="Search entire store here...">
-                <button class="search-button" type="submit"><i class="fa fa-search"></i></button>
+                <button class="search-button" type="submit"><img src="images/search.png" alt="Icon"></button>
             </div>
             <div class="navbar-icons">
                 <img class="icon" src="images/geo-alt.png" alt="Icon">
@@ -47,13 +47,13 @@
     <nav class="nav-mobile text-size">
         <div class="navbar-left">
             <img src="images/menu.png" alt="Menu">
-            <button class="search-button" type="submit"><i class="fa fa-search"></i></button>
+            <button class="search-button" type="submit"><img src="images/search.png" alt="Icon"></button>
         </div>
         <div class="navbar-center">EWM</div>
         <div class="navbar-right">
             <div class="navbar-icons">
-                <img class="icon" src="images/person.png" alt="Icon">
                 <img class="icon" src="images/bag.png" alt="Icon">
+                <img class="icon" src="images/person.png" alt="Icon">
             </div>
         </div>
     </nav>
@@ -61,11 +61,11 @@
     <div class="top-section text-size">
         <img class="top-image" src="images/top-image.png" alt="Image">
         <div class="top-text">
-            <p class="curated-selections">Curated Selections</p>
-            <p class="description-text">
+            <div class="curated-selections">Curated Selections</div>
+            <div class="description-text">
                 Join 10.000 clients nationwide who enjoy reading about and
                 receiving the finest selections from the wine world.
-            </p>
+            </div>
         </div>
         <div class="top-buttons">
         <button class="shop-now">Shop Now</button>
@@ -104,8 +104,8 @@
                     </ul>
                 </div>
                 <div class="glide__arrows" data-glide-el="controls">
-                    <button class="glide__arrow glide__arrow--left" data-glide-dir="<">&#x276E;</button>
-                    <button class="glide__arrow glide__arrow--right" data-glide-dir=">">&#x276F;</button>
+                    <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><img src="images/chevron-left.png" alt="Left Arrow"></button>
+                    <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><img src="images/we-right.png" alt="Right Arrow"></button>
                 </div>
             </div>
         </div>
@@ -146,26 +146,26 @@
                 <img class="grid-image" src="images/img4.png" alt="Image 1">
                 <div class="description-box">
                 <p class="description-text">2017 Robert Sinskey, "Los Carneros" Pinot Noir, 375ml </p>
-                <p class="learn-more">$28.95 <s style="color: rgb(183, 180, 180);">$32.95</s></p>
+                <div class="price">$28.95 <s style="color: rgb(183, 180, 180);">$32.95</s></div>
                 </div>
             </div>
             <div class="item">
                 <img class="grid-image" src="images/img5.png" alt="Image 2">
                 <div class="description-box">
                 <p class="description-text">2021 Walter Hansel "North Slope" Pinot Noir </p>
-                <p class="learn-more">$28.95 <s style="color: rgb(183, 180, 180);">$32.95</s></p>
+                <div class="price">$28.95 <s style="color: rgb(183, 180, 180);">$32.95</s></div>
                 </div>
             </div>
             <div class="item">
                 <img class="grid-image" src="images/img6.png" alt="Image 3">
                 <div class="description-box">
                 <p class="description-text">2020 Occidental, "Freestone-Occidental" Pinot Noir, Sonoma</p>
-                <p class="learn-more">$28.95 <s style="color: rgb(183, 180, 180);">$32.95</s></p>
+                <div class="price">$28.95 <s style="color: rgb(183, 180, 180);">$32.95</s></div>
                 </div>
             </div>
         </div>
 
-        <div class="description-box item">
+        <div id="description-box-3" class="description-box item">
             <p class="title">Follow Us</p>
             <p class="description-text">Follow us on Instagram to be more connected with us.</p>
             <button class="btn-general">Follow Us</button>
@@ -197,7 +197,7 @@
     <footer class="footer text-size">
         <div class="item">
         <p class="title">ENGLEWOOD WINE MERCHANTS</p>
-        <p>Lorem Ipsum</p>
+        <p class="subtitle">Lorem Ipsum</p>
         <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
             sed do eiusmod tempor incididunt ut labore et dolore 
             magna.</p>
@@ -205,10 +205,10 @@
         <input id="email" class="email" type="text" placeholder="">
         <button class="btn-general">Sign Up</button>
         <div class="navbar-icons">
-            <img class="icon" src="images/Link.png" alt="Icon">
-            <img class="icon" src="images/Link (1).png" alt="Icon">
-            <img class="icon" src="images/Link (2).png" alt="Icon">
-            <img class="icon" src="images/Link (3).png" alt="Icon">
+            <button class="btn-icons"><img class="icon" src="images/Link.png" alt="Icon"></button>
+            <button class="btn-icons"><img class="icon" src="images/Link (1).png" alt="Icon"></button>
+            <button class="btn-icons"><img class="icon" src="images/Link (2).png" alt="Icon"></button>
+            <button class="btn-icons"><img class="icon" src="images/Link (3).png" alt="Icon"></button>
         </div>
         </div>
 
@@ -242,23 +242,23 @@
          <div>
             <p class="title">INFORMATION</p>
             <div class="section">
-                <p>Track My Order</p>
-                <p>Shipping Terms</p>
-                <p>Local Delivery</p>
-                <p>In Store Pickup</p>
-                <p>FAQ</p>
-                <p>Contact Us</p>
+                <p><a href="#">Track My Order</a></p>
+                <p><a href="#">Shipping Terms</a></p>
+                <p><a href="#">Local Delivery</a></p>
+                <p><a href="#">In Store Pickup</a></p>
+                <p><a href="#">FAQ</a></p>
+                <p><a href="#">Contact Us</a></p>
             </div>
          </div>
          <div>
             <p class="title">MORE</p>
             <div class="section">
-                <p>My Account</p>
-                <p>Login</p>
-                <p>My Cart</p>
-                <p>My Wishlist</p>
-                <p>Blog</p>
-                <p>Privacy</p>
+                <p><a href="#">My Account</a></p>
+                <p><a href="#">Login</a></p>
+                <p><a href="#">My Cart</a></p>
+                <p><a href="#">My Wishlist</a></p>
+                <p><a href="#">Blog</a></p>
+                <p><a href="#">Privacy</a></p>
             </div>
          </div>
         </div>
@@ -266,7 +266,7 @@
     
     <footer class="footer-mobile">
         <div class="item">
-            <p class="font-size: 4vw">Lorem Ipsum</p>
+            <p style="font-size: 4vw">Lorem Ipsum</p>
             <p class="description text-size">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                 sed do eiusmod tempor incididunt ut labore et dolore 
                 magna.</p>
@@ -278,10 +278,10 @@
         <div class="title">Information<i class="fas fa-chevron-down dropdown-icon"></i></div>
         <div class="title">More<i class="fas fa-chevron-down dropdown-icon"></i></div>
         <div class="navbar-icons">
-            <img class="icon" src="images/Link.png" alt="Icon">
-            <img class="icon" src="images/Link (1).png" alt="Icon">
-            <img class="icon" src="images/Link (2).png" alt="Icon">
-            <img class="icon" src="images/Link (3).png" alt="Icon">
+            <button class="btn-icons"><img class="icon" src="images/Link.png" alt="Icon"></button>
+            <button class="btn-icons"><img class="icon" src="images/Link (1).png" alt="Icon"></button>
+            <button class="btn-icons"><img class="icon" src="images/Link (2).png" alt="Icon"></button>
+            <button class="btn-icons"><img class="icon" src="images/Link (3).png" alt="Icon"></button>
         </div>
     </footer>
     <pre class="copyright text-size">   Copyright &copy; 2022 Englewood Wine Merchants. All Rights Reserved

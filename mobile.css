@@ -10,49 +10,51 @@
         width: 100%;
         margin: 0;
         background-color:rgb(207, 205, 205);
-        height: 10vh;
+        height: 12.5vh;
         z-index: 1000;
         display: flex;
         align-items: center;
         justify-content:space-between;
     }
     .search-button{
+        position: relative;
         font-size: 3vw;
     }
     .nav-mobile img{
-        width: 4vw;
+        width: 5vw;
     }
     .navbar-center{
         font-size: 5vw;
     }
     .navbar-left, .navbar-icons{
-        gap:3vw;
+        gap:5vw;
     }
     .navbar-icons{
         width: 3vw;
     }
     .navbar-right{
-        margin-right: 12%;
+        margin-right: 17%;
     }
-
     .text-size{
-        font-size: 3vw;
+        font-size: 4vw;
     }
     .description-box .title{
         font-size: 5vw;
+    }
+    .description-box{
+        margin-top: 7vw;
     }
     .content{
         width: 100%;
         display: flex;
         flex-direction: column;
-        gap: 5vh;
-        margin-left: 0;
-        margin-right: 0;
+        margin: 0;
         overflow-x: hidden;
     }
     .carousel{
         width: 100%;
         padding-right: 0;
+        margin-bottom: 3vw;
     }
     .carousel .item{
         height: 90vw;
@@ -67,8 +69,13 @@
         display: flex;
         flex-direction: column;
         margin-top: 0;
-        gap: 5vh;
-        width: 100%;
+        gap: 5vw;
+        width: 90%;
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+    .grid4{
+        gap:0;
     }
     .grid1 .item, .grid2 .item, .grid4 .item{
         height: 90vw;
@@ -78,8 +85,15 @@
     }
     .grid3{
         grid-template-columns: repeat(2, 1fr);
+        gap:0;
         margin-top: 0;
-        width: 100%;
+        margin-bottom: 7vw;
+        width: 90%;
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+    #description-box-3{
+        margin-bottom: 0;
     }
     .grid4 .title{
         font-size: 5vw;
@@ -110,8 +124,12 @@
         padding: 1%;
         font-size: 3vw;
     }
+    .top-section{
+        margin: 0;
+        height: 65vh;
+    }
     .top-image{
-        height: 90vw;
+        height: 65vh;
         object-fit: cover;
         width: auto;
     }
@@ -121,18 +139,11 @@
         width: 100%;
      }
      .top-section .top-buttons{
-        height: 5vh;
-        gap: 0.5vh;
         width: 35%;
+        top: 60%;
      }
      .top-text{
-        position: absolute;
-        top: 10%;
-        color:#ffffff;
-        margin-left: 5%;
-        display: flex;
-        flex-direction: column;
-        width: 100vw;
+        top: 35%;
     }
     .top-section .description-text{
         width: 70vw;
@@ -176,4 +187,14 @@
         padding: 0;
         overflow-x: hidden;
     } 
+    .footer-mobile{
+        border: none;
+    }
+    .footer-mobile .btn-general{
+        border-color: black;
+        color: black;
+        margin-top: 20px;
+        padding: 10px;
+    }
+
 }
