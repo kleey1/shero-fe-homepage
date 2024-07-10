@@ -282,6 +282,7 @@ input:focus {
     background-color: rgb(41, 37, 35);
     color: #B7926A;
     box-shadow: none;
+    font-size: 0.9vw;
 }
 
 .carousel{
