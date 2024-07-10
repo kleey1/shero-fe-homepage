@@ -571,6 +571,7 @@ footer .grid5 .title{
 .footer .navbar-icons{
     margin-top: 10%;
     gap:0.05vw;
+    padding: 0;
 }
 .footer .icon{
     width: 1.5vw;
