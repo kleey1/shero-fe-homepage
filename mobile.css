@@ -36,13 +36,13 @@
         margin-right: 17%;
     }
     .text-size{
-        font-size: 4vw;
+        font-size: 3.1vw;
     }
     .description-box .title{
         font-size: 5vw;
     }
-    .description-box{
-        margin-top: 7vw;
+    .description-text{
+        line-height: 5vw;
     }
     .content{
         width: 100%;
@@ -54,7 +54,7 @@
     .carousel{
         width: 100%;
         padding-right: 0;
-        margin-bottom: 3vw;
+        margin-bottom: 5vw;
     }
     .carousel .item{
         height: 90vw;
@@ -73,27 +73,43 @@
         width: 90%;
         margin-left: 5vw;
         margin-right: 5vw;
+        margin-bottom: 6vw;
     }
     .grid4{
         gap:0;
     }
-    .grid1 .item, .grid2 .item, .grid4 .item{
-        height: 90vw;
+    .grid2 .item, .grid4 .item{
+        height: 94vw;
+    }
+    .grid1 .item{
+        height: 97vw;
     }
     .grid1 .item .description .title{
         font-size: 4vw;
     }
-    .grid3{
-        grid-template-columns: repeat(2, 1fr);
-        gap:0;
-        margin-top: 0;
-        margin-bottom: 7vw;
-        width: 90%;
-        margin-left: 5vw;
-        margin-right: 5vw;
+    .grid1 .item .description{
+        padding-bottom: 0;
+    }
+    .grid1 .item .description-text, .learn-more{
+        font-size: 3.1vw;
+    }
+    .learn-more img{
+        width: 1.8vw;
+    }
+    .grid2 .description-box{
+        padding-bottom: 0;
+        font-size: 3.1vw;
+    }
+    .price{
+        font-size: 3.5vw;
     }
     #description-box-3{
         margin-bottom: 0;
+    }
+    .insta-preview{
+        margin-top: 0;
+        padding-top: 0;
+        width: 90%;
     }
     .grid4 .title{
         font-size: 5vw;
@@ -115,6 +131,7 @@
         color:antiquewhite;
         width: 50vw;
         text-align: center;
+        font-size: 2.8vw;
     }    
     .description-box{
         width: 85%;
@@ -126,21 +143,20 @@
     }
     .top-section{
         margin: 0;
-        height: 65vh;
+        height: 90vw;
     }
     .top-image{
-        height: 65vh;
         object-fit: cover;
         width: auto;
+        height: 90vw;
     }
     .top-section button{
-        font-size: 2vw;
+        font-size: 2.8vw;
         padding: 6%;
         width: 100%;
      }
      .top-section .top-buttons{
         width: 35%;
-        top: 60%;
      }
      .top-text{
         top: 35%;
@@ -173,14 +189,15 @@
         width: 100%;
     }
     .dropdown-icon {
-        color: #b4b2b2; 
-        font-size: 3vw;
+        font-size: 2vw;
     }
     .footer-mobile .navbar-icons{
         margin-top: 5%;
+        gap:0.05vw;
+        padding-left: 0;
     }
     .footer-mobile .icon{
-        width: 5vw;
+        width: 4vw;
     }
     html, body {
         margin: 0;
@@ -195,6 +212,20 @@
         color: black;
         margin-top: 20px;
         padding: 10px;
+    }
+    .footer-mobile .email{
+        font-size: 3.2vw;
+        font-weight: bold;
+    }
+    .footer-mobile .item .subtitle{
+        font-size: 3.8vw;
+        font-weight: 100;
+    }
+    .footer-mobile .title{
+        align-items: center;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 3.2vw;
+        padding-left: 0;
     }
 
 }

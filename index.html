@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css
-    " crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="home.css">
     <link rel="stylesheet" href="mobile.css">
     <link rel="stylesheet" href="glideJS/main.css">
@@ -16,6 +16,7 @@
 </head>
 
 <body>
+<div class="container">
     <nav class="navbar text-size">
         <div class="navbar-left">
             <p class="navbar-title">ENGLEWOOD WINE MERCHANTS</p>
@@ -66,10 +67,10 @@
                 Join 10.000 clients nationwide who enjoy reading about and
                 receiving the finest selections from the wine world.
             </div>
-        </div>
-        <div class="top-buttons">
-        <button class="shop-now">Shop Now</button>
-        <button class="join-us">Join Us</button>
+            <div class="top-buttons">
+            <button class="shop-now">Shop Now</button>
+            <button class="join-us">Join Us</button>
+            </div>
         </div>
     </div>
 
@@ -97,7 +98,7 @@
                             <div class="item">
                             <div class="title">2018 Poggiotondo, Brunello di Montalcino</div>
                             <div class="description-text">Brunello at this price and Quality is your new house pour</div>
-                            <img class="icon" src="images/_ÎÓÈ_1.png">
+                            <img class="icon" src="images/95.png" alt="Image 2">
                             <button class="btn-general">View more</button>
                             </div>
                         </li>
@@ -145,21 +146,21 @@
             <div class="item">
                 <img class="grid-image" src="images/img4.png" alt="Image 1">
                 <div class="description-box">
-                <p class="description-text">2017 Robert Sinskey, "Los Carneros" Pinot Noir, 375ml </p>
+                <div class="description-text">2017 Robert Sinskey, "Los Carneros" Pinot Noir, 375ml </div>
                 <div class="price">$28.95 <s style="color: rgb(183, 180, 180);">$32.95</s></div>
                 </div>
             </div>
             <div class="item">
                 <img class="grid-image" src="images/img5.png" alt="Image 2">
                 <div class="description-box">
-                <p class="description-text">2021 Walter Hansel "North Slope" Pinot Noir </p>
+                <div class="description-text">2021 Walter Hansel "North Slope" Pinot Noir </div>
                 <div class="price">$28.95 <s style="color: rgb(183, 180, 180);">$32.95</s></div>
                 </div>
             </div>
             <div class="item">
                 <img class="grid-image" src="images/img6.png" alt="Image 3">
                 <div class="description-box">
-                <p class="description-text">2020 Occidental, "Freestone-Occidental" Pinot Noir, Sonoma</p>
+                <div class="description-text">2020 Occidental, "Freestone-Occidental" Pinot Noir, Sonoma</div>
                 <div class="price">$28.95 <s style="color: rgb(183, 180, 180);">$32.95</s></div>
                 </div>
             </div>
@@ -171,13 +172,18 @@
             <button class="btn-general">Follow Us</button>
         </div>
 
-        <div class="grid3">
-            <img class="grid-image" src="images/img7.png" alt="Image 1">
-            <img class="grid-image" src="images/img8.png" alt="Image 2">
-            <img class="grid-image" src="images/img9.png" alt="Image 3">
-            <img class="grid-image" src="images/img10.png" alt="Image 4">
-            <img class="grid-image" src="images/img11.png" alt="Image 5">
-            <img class="grid-image" src="images/img12.png" alt="Image 6">
+        <div class="insta-preview">
+            <style>
+                .eapps-instagram-feed-title {
+                font-size: 0;
+                font-weight: 0;
+                text-align: center;
+                line-height: 0;
+                padding:0;
+                }
+            </style>
+            <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+            <div class="elfsight-app-1e32a33c-1c04-4131-959b-71b6eed75ba6" data-elfsight-app-lazy></div>
         </div>
 
         <div class="grid4">
@@ -201,9 +207,9 @@
         <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
             sed do eiusmod tempor incididunt ut labore et dolore 
             magna.</p>
-        <p>Email*</p>
-        <input id="email" class="email" type="text" placeholder="">
-        <button class="btn-general">Sign Up</button>
+        <p class="email">Email*</p>
+        <input id="email" type="text" placeholder="">
+        <button class="btn-general signup">Sign Up</button>
         <div class="navbar-icons">
             <button class="btn-icons"><img class="icon" src="images/Link.png" alt="Icon"></button>
             <button class="btn-icons"><img class="icon" src="images/Link (1).png" alt="Icon"></button>
@@ -266,12 +272,12 @@
     
     <footer class="footer-mobile">
         <div class="item">
-            <p style="font-size: 4vw">Lorem Ipsum</p>
+            <p class="subtitle">Lorem Ipsum</p>
             <p class="description text-size">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                 sed do eiusmod tempor incididunt ut labore et dolore 
                 magna.</p>
-            <p style="font-size: 4vw">Email*</p>
-            <input id="email-mobile" class="email" type="text" placeholder="">
+            <p class="email">Email*</p>
+            <input id="email" type="text" placeholder="">
             <button class="btn-general">Sign Up</button>
         </div>
         <div class="title">Customer Service<i class="fas fa-chevron-down dropdown-icon"></i></div>
@@ -284,9 +290,10 @@
             <button class="btn-icons"><img class="icon" src="images/Link (3).png" alt="Icon"></button>
         </div>
     </footer>
-    <pre class="copyright text-size">   Copyright &copy; 2022 Englewood Wine Merchants. All Rights Reserved
-    </pre>
+    <div class="copyright text-size">   Copyright &copy; 2022 Englewood Wine Merchants. All Rights Reserved
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+</div>
 </body>
 <script src="script.js"></script>
 </html>
