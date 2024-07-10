@@ -15,7 +15,7 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-radius: 20px;
+    border-radius: 1.5vw;
 }
 
 .navbar-title{
