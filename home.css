@@ -193,7 +193,7 @@ input:focus {
 }
 
 .description-box .title{
-    font-size: 3.6vw;
+    font-size: 3vw;
     margin-bottom: 2vw;
 }
 .description-box .description-text{
@@ -418,8 +418,8 @@ input:focus {
 .grid2{
     position:relative;
     display: grid;
-    grid-template-columns: 33.3% 33.3% 33.3%;
-    grid-template-rows: 35vw;
+    grid-template-columns: 32% 32% 32%;
+    grid-template-rows: 31vw;
     border: none;
     overflow-y: hidden;
     overflow-x: hidden;
@@ -432,7 +432,6 @@ input:focus {
 .grid2 .item{
     justify-content: flex-start;
 }
-
 .grid2 .description-box{
     position: absolute;
     bottom: 0;
