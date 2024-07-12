@@ -28,7 +28,6 @@ html, body {
     display: flex;
     margin-left: 2%;
     font-size: 1.1vw;
-    width: auto;
 }
 .navbar-center{
     display:flex;
@@ -337,7 +336,7 @@ input:focus {
     transition: background-color 0.3s, color 0.3s, border 0.3s;
 }
 .carousel .glide__arrow img:hover{
-    background-color: #f3f3f3;
+    background-color: #f3f3f354;
 }
 .glide__slide .icon{
     padding: 2.5vw;
@@ -387,12 +386,6 @@ input:focus {
     align-items: normal;
     justify-content: flex-start;
     background-color: rgb(243, 241, 241);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.grid1 .item:hover{
-    transform: translateY(-0.1vw) scale(1.02);
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.13);
-    opacity: 0.9;
 }
 
 .grid1 .item .description{
