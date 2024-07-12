@@ -30,14 +30,14 @@
         <div class="navbar-right">
             <div class="navbar-search">
                 <input id="search-text" type="search" placeholder="Search entire store here...">
-                <button class="search-button" type="submit"><img src="images/search.png" alt="Icon"></button>
+                <button class="search-button" type="submit"><img src="images/search.svg" alt="Icon"></button>
             </div>
             <div class="navbar-icons">
-                <img class="icon" src="images/geo-alt.png" alt="Icon">
-                <img class="icon" src="images/person.png" alt="Icon">
-                <img class="icon" src="images/telephone.png" alt="Icon">
+                <img class="icon" src="images/geo-alt.svg" alt="Icon">
+                <img id="person" class="icon" src="images/person.svg" alt="Icon">
+                <img class="icon" src="images/telephone.svg" alt="Icon">
                 <div class="bag">
-                  <img class="icon" src="images/bag.png" alt="Icon">
+                  <img class="icon" src="images/bag.svg" alt="Icon">
                   <img class="bag-icon" src="images/Ellipse 1.png" alt="Icon">
                   <div class="text-overlay">0</div>
                 </div>
@@ -47,20 +47,32 @@
 
     <nav class="nav-mobile text-size">
         <div class="navbar-left">
-            <img src="images/menu.png" alt="Menu">
-            <button class="search-button" type="submit"><img src="images/search.png" alt="Icon"></button>
+            <button class="menu-btn"><img src="images/menu.svg" alt="Menu"></button>
+            <button id="search-button" class="search-btn-mobile" type="submit"><img src="images/search.svg" alt="Icon"></button>
         </div>
-        <div class="navbar-center">EWM</div>
-        <div class="navbar-right">
+        <div class="navbar-center nav-center-mobile">EWM</div>
+        <div class="navbar-right nav-right-mobile">
             <div class="navbar-icons">
-                <img class="icon" src="images/bag.png" alt="Icon">
-                <img class="icon" src="images/person.png" alt="Icon">
+                <img class="icon" src="images/bag.svg" alt="Bag">
+                <img id="person" class="icon" src="images/person.svg" alt="Person">
             </div>
+        </div>
+        <div class="navbar-search search-mobile">
+            <input id="search-text" type="search" placeholder="Search entire store here...">
+            <button class="search-button" type="submit"><img src="images/search.svg" alt="Icon"></button>
         </div>
     </nav>
 
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Shop Wine</a>
+        <a href="#">Spirits</a>
+        <a href="#">Pantry</a>
+        <a href="#">E-Gift Cards</a>
+    </div>
+
     <div class="top-section text-size">
-        <img class="top-image" src="images/top-image.png" alt="Image">
+        <img class="top-image" src="images/top-image.svg" alt="Image">
         <div class="top-text">
             <div class="curated-selections">Curated Selections</div>
             <div class="description-text">
@@ -98,7 +110,7 @@
                             <div class="item">
                             <div class="title">2018 Poggiotondo, Brunello di Montalcino</div>
                             <div class="description-text">Brunello at this price and Quality is your new house pour</div>
-                            <img class="icon" src="images/95.png" alt="Image 2">
+                            <img class="icon" src="images/95.svg" alt="Image 2">
                             <button class="btn-general">View more</button>
                             </div>
                         </li>
@@ -120,7 +132,7 @@
                         Barolo, Brunello, Burgundy, Bordeaux, and even Olive Oil - there are so many options
                         and so many personal preferences. Let your recipient decide what he or she prefers
                         with an Englewood Wine Merchants e-gift card. </p>
-                    <a href="#" class="learn-more">Learn more <img src="images/Vector.png"></a>
+                    <a href="#" class="learn-more">Learn more <img src="images/Vector.svg"></a>
                 </div>
             </div>
             <div class="item">
@@ -131,7 +143,7 @@
                         Sending several gifts? Our corporate gifting team is here to help. From Napa Valey to
                         the hills of Tuscany, we can customize your gifts whether you are sending to corporate
                         clients, colleagues, friends, or loved ones. </p>
-                        <a href="#" class="learn-more">Learn more <img src="images/Vector.png"></a>
+                        <a href="#" class="learn-more">Learn more <img src="images/Vector.svg"></a>
                 </div>
             </div>
         </div>
@@ -169,7 +181,7 @@
         <div id="description-box-3" class="description-box item">
             <p class="title">Follow Us</p>
             <p class="description-text">Follow us on Instagram to be more connected with us.</p>
-            <button class="btn-general">Follow Us</button>
+            <button class="btn-general">Shop Now</button>
         </div>
 
         <div class="insta-preview">
@@ -188,7 +200,7 @@
 
         <div class="grid4">
             <div class="item">
-                <img class="icon" src="images/map.png" alt="Icon">
+                <img class="icon" src="images/map.svg" alt="Icon">
                 <p class="title">OUR LOCATION</p>
                 <p class="description-text">ONE ENGLE STREET, ENGLEWOOD</p>
             </div>
@@ -211,10 +223,26 @@
         <input id="email" type="text" placeholder="">
         <button class="btn-general signup">Sign Up</button>
         <div class="navbar-icons">
-            <button class="btn-icons"><img class="icon" src="images/Link.png" alt="Icon"></button>
-            <button class="btn-icons"><img class="icon" src="images/Link (1).png" alt="Icon"></button>
-            <button class="btn-icons"><img class="icon" src="images/Link (2).png" alt="Icon"></button>
-            <button class="btn-icons"><img class="icon" src="images/Link (3).png" alt="Icon"></button>
+            <button class="btn-icons">
+                <a href="https://www.facebook.com/EnglewoodWineMerchants/" target="_blank">
+                <img class="icon" src="images/Link.svg" alt="Icon">
+                </a>
+            </button>
+            <button class="btn-icons">
+                <a href="https://twitter.com/merchantsofwine?lang=en" target="_blank">
+                <img class="icon" src="images/Link (1).svg" alt="Icon">
+                </a>
+            </button>
+            <button class="btn-icons">
+                <a href="https://www.instagram.com/englewoodwinemerchants/" target="_blank">
+                <img class="icon" src="images/Link (2).svg" alt="Icon">
+                </a>
+            </button>
+            <button class="btn-icons">
+                <a href="https://www.pinterest.com/englewoodwine/" target="_blank">
+                <img class="icon" src="images/Link (3).svg" alt="Icon">
+                </a>
+            </button>
         </div>
         </div>
 
@@ -278,16 +306,74 @@
                 magna.</p>
             <p class="email">Email*</p>
             <input id="email" type="text" placeholder="">
-            <button class="btn-general">Sign Up</button>
+            <button class="btn-general signup">Sign Up</button>
         </div>
-        <div class="title">Customer Service<i class="fas fa-chevron-down dropdown-icon"></i></div>
-        <div class="title">Information<i class="fas fa-chevron-down dropdown-icon"></i></div>
-        <div class="title">More<i class="fas fa-chevron-down dropdown-icon"></i></div>
+        <div class="dropdown">
+            <div id="c-s-title" class="title">Customer Service<i class="fas fa-chevron-down dropdown-icon"></i></div>
+            <div id="customer-service" class="section">
+                <div class="section">
+                    <p>Location:
+                        One Engle Street, Englewood, NJ 07631</p>
+                </div>
+                <div class="section">
+                    <p>Phone:
+                        877-568-8820 / 201-568-8820</p>
+                </div>
+                <div class="section">
+                    <p>Email:
+                        info@englewoodwinemerchants.com</p>
+                </div>
+                <div class="section">
+                    <p>Monday - Friday:  10:00 a.m. - 7:00 p.m.</p>
+                    <p>Saturday:  11:00 a.m. - 7:00 p.m.</p>
+                    <p>Sunday:   12:00 p.m. - 6:00 p.m. (Oct - Dec)</p>
+                </div>
+            </div>
+         </div>
+        </div>
+        <div class="dropdown">
+            <div id="info-title" class="title">Information<i class="fas fa-chevron-down dropdown-icon"></i></div>
+            <div id="information" class="section">
+                <p><a href="#">Track My Order</a></p>
+                <p><a href="#">Shipping Terms</a></p>
+                <p><a href="#">Local Delivery</a></p>
+                <p><a href="#">In Store Pickup</a></p>
+                <p><a href="#">FAQ</a></p>
+                <p><a href="#">Contact Us</a></p>
+            </div>
+        </div>
+        <div class="dropdown">
+            <div id="more-title" class="title">More<i class="fas fa-chevron-down dropdown-icon"></i></div>
+            <div id="more" class="section">
+                <p><a href="#">My Account</a></p>
+                <p><a href="#">Login</a></p>
+                <p><a href="#">My Cart</a></p>
+                <p><a href="#">My Wishlist</a></p>
+                <p><a href="#">Blog</a></p>
+                <p><a href="#">Privacy</a></p>
+            </div>
+        </div>
         <div class="navbar-icons">
-            <button class="btn-icons"><img class="icon" src="images/Link.png" alt="Icon"></button>
-            <button class="btn-icons"><img class="icon" src="images/Link (1).png" alt="Icon"></button>
-            <button class="btn-icons"><img class="icon" src="images/Link (2).png" alt="Icon"></button>
-            <button class="btn-icons"><img class="icon" src="images/Link (3).png" alt="Icon"></button>
+            <button class="btn-icons">
+                <a href="https://www.facebook.com/EnglewoodWineMerchants/" target="_blank">
+                <img class="icon" src="images/Link.svg" alt="Icon">
+                </a>
+            </button>
+            <button class="btn-icons">
+                <a href="https://twitter.com/merchantsofwine?lang=en" target="_blank">
+                <img class="icon" src="images/Link (1).svg" alt="Icon">
+                </a>
+            </button>
+            <button class="btn-icons">
+                <a href="https://www.instagram.com/englewoodwinemerchants/" target="_blank">
+                <img class="icon" src="images/Link (2).svg" alt="Icon">
+                </a>
+            </button>
+            <button class="btn-icons">
+                <a href="https://www.pinterest.com/englewoodwine/" target="_blank">
+                <img class="icon" src="images/Link (3).svg" alt="Icon">
+                </a>
+            </button>
         </div>
     </footer>
     <div class="copyright text-size">   Copyright &copy; 2022 Englewood Wine Merchants. All Rights Reserved

@@ -6,40 +6,82 @@
         display: none;
     }
     .nav-mobile{
+        position: relative;
         box-sizing: border-box;
         width: 100%;
         margin: 0;
+        padding-left: 2vw;
+        padding-right: 2vw;
         background-color:rgb(207, 205, 205);
-        height: 12.5vh;
+        height: 17vw;
         z-index: 1000;
         display: flex;
-        align-items: center;
+        align-items:last baseline;
+        padding-bottom: 4vw;
         justify-content:space-between;
     }
-    .search-button{
-        position: relative;
+    .search-btn-mobile{
+        position: absolute;
+        margin-left: 10vw;
+        font-size: 3vw;
+        background-color:#c0b9b400;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+    }
+    .menu-btn{
+        position: absolute;
+        background-color:#c0b9b400;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+    }
+    .nav-mobile .search-mobile{
+        display: none;
+    }
+    .nav-mobile .navbar-search{
+        position: absolute;
+        margin-left: 20%;
+        border-radius: 30px;
+        height:8vw;
+        width: 60vw;
+        bottom: 4vw;
+        background-color: aqua;
+    }
+    .nav-mobile .navbar-search input{
+        border-radius: 30px;
+        height:8vw;
+        width: 60vw;
+        padding-left: 3vw;
         font-size: 3vw;
     }
+    
+    .nav-mobile input::placeholder{
+        font-family:'Times New Roman', Times, serif;
+        position:absolute;
+        left: 3vw;
+        font-size: 3vw;
+        bottom: 2vw;
+    }
     .nav-mobile img{
-        width: 5vw;
+        width: 6vw;
     }
     .navbar-center{
         font-size: 5vw;
+        margin-left: 42vw;
     }
     .navbar-left, .navbar-icons{
-        gap:5vw;
+        gap:4vw;
+        align-items: last baseline;
     }
-    .navbar-icons{
-        width: 3vw;
-    }
-    .navbar-right{
-        margin-right: 17%;
+    .navbar-left{
+        position: absolute;
     }
     .text-size{
-        font-size: 3.1vw;
+        font-size: 3.25vw;
     }
     .description-box .title{
-        font-size: 5vw;
+        font-size: 8vw;
     }
     .description-text{
         line-height: 5vw;
@@ -63,7 +105,7 @@
         display: none;
     }
     .carousel .btn-general{
-        font-size: 2.5vw;
+        font-size: 3vw;
     }
     .glide__track, .glide__slides {
         display: block !important; /* Override Glide.js styles */
@@ -85,19 +127,19 @@
         height: 94vw;
     }
     .grid1 .item{
-        height: 97vw;
+        height: 99vw;
     }
     .grid1 .item .description .title{
-        font-size: 4vw;
+        font-size: 4.4vw;
     }
     .grid1 .item .description{
         padding-bottom: 0;
     }
     .grid1 .item .description-text, .learn-more{
-        font-size: 3.1vw;
+        font-size: 3.25vw;
     }
     .learn-more img{
-        width: 1.8vw;
+        width: 2.5vw;
     }
     .grid2 .description-box{
         padding-bottom: 0;
@@ -122,26 +164,26 @@
     }
     .glide__slide .icon{
         padding: 5vw;
-        width: 25vw;
+        width: 30vw;
     }
     .glide__slide .title{
-        font-size: 4.5vw;
+        font-size: 5vw;
         width: 50vw;
         text-align: center;
     }
     .glide__slide .description-text{
         margin-top: 5%;
         color:antiquewhite;
-        width: 50vw;
+        width: 70vw;
         text-align: center;
-        font-size: 2.8vw;
+        font-size: 3.25vw;
     }    
     .description-box{
         width: 85%;
     }
     .btn-general{
-        width: 30%;
-        padding: 1%;
+        width: 35%;
+        padding: 2%;
         font-size: 3vw;
     }
     .top-section{
@@ -159,16 +201,17 @@
         width: 100%;
      }
      .top-section .top-buttons{
-        width: 35%;
+        width: 50%;
+        gap: 2vw;
      }
      .top-text{
         top: 35%;
     }
     .top-section .description-text{
-        width: 70vw;
+        width: 80vw;
     }
     .curated-selections{
-        font-size: 9vw;
+        font-size: 10vw;
     }
 
     .footer-mobile{
@@ -196,11 +239,11 @@
     }
     .footer-mobile .navbar-icons{
         margin-top: 5%;
-        gap:0.05vw;
+        gap:0.1vw;
         padding-left: 0;
     }
     .footer-mobile .icon{
-        width: 4vw;
+        width: 5vw;
     }
     html, body {
         margin: 0;
@@ -217,18 +260,83 @@
         padding: 10px;
     }
     .footer-mobile .email{
-        font-size: 3.2vw;
+        font-size: 3.5vw;
         font-weight: bold;
     }
     .footer-mobile .item .subtitle{
-        font-size: 3.8vw;
+        font-size: 5vw;
         font-weight: 100;
+    }
+    .footer-mobile #email{
+        border:none;
+        border-bottom: 1.5px solid #c9a67f;
     }
     .footer-mobile .title{
         align-items: center;
         font-family: 'Montserrat', sans-serif;
-        font-size: 3.2vw;
+        font-size: 4vw;
         padding-left: 0;
     }
+    .footer-mobile .signup{
+        font-size: 4vw;
+    }
+
+    .sidenav{
+        display: block;
+    }
+
+    .sidenav {
+    position: absolute;
+    height: 84vw;
+    width: 0;
+    z-index: 1;
+    top: 17vw;
+    left: 0;
+    background-color: #111111ce;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 6vw;
+  }
+  
+  .sidenav a {
+    padding: 3vw 3vw 3vw 3vw;
+    text-decoration: none;
+    font-size: 5vw;
+    color: #cecece;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 2vw;
+    font-size: 8vw;
+    margin-left: 50px;
+  }
+
+  .dropdown{
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-mobile .section, .footer-mobile .section a{
+    font-size: 3.5vw;
+    text-decoration: none;
+    color: #000000;
+    transition: background-color 0.3s, color 0.3s, border 0.3s;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+#customer-service, #information, #more{
+    display: none;
+}
+
+#person{
+    width: 6.5vw;
+}
 
 }
