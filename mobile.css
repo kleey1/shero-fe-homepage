@@ -319,8 +319,8 @@
     margin-left: 50px;
   }
   /* Open state */
-.sidenav.open {
-    width: 50vw; /* Adjust as needed */
+  .sidenav .open {
+    width: 50vw; 
   }
   .dropdown{
     display: flex;
