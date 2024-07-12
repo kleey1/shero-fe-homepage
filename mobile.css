@@ -340,4 +340,11 @@
     width: 6.5vw;
 }
 
+/* Example media query for iPhone */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) { 
+    .navbar-left, .navbar-right {
+        top: 5vw; /* or adjust as needed */
+    }
+}
+
 }
