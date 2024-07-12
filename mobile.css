@@ -67,7 +67,7 @@
         width: 6vw;
     }
     .navbar-center{
-        font-size: 5vw;
+        font-size: 6vw;
         margin-left: 42vw;
     }
     .navbar-left, .navbar-icons{
@@ -76,6 +76,7 @@
     }
     .navbar-left{
         position: absolute;
+        top: 13.5vw;
     }
     .text-size{
         font-size: 3.25vw;
@@ -239,11 +240,11 @@
     }
     .footer-mobile .navbar-icons{
         margin-top: 5%;
-        gap:0.1vw;
+        gap:0.4vw;
         padding-left: 0;
     }
     .footer-mobile .icon{
-        width: 5vw;
+        width: 6vw;
     }
     html, body {
         margin: 0;
