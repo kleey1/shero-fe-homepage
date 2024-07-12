@@ -75,7 +75,7 @@
         align-items: last baseline;
     }
     .navbar-left{
-        position: absolute;
+        position: fixed;
         top: 13vw;
     }
     .text-size{
