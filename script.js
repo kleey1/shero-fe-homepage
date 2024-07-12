@@ -84,7 +84,8 @@ searchButton.addEventListener("click", function () {
 });
 
 menuButton.addEventListener("click", function () {
-  document.getElementById("mySidenav").style.width = "50vw";
+  var sideNav = document.getElementById("mySidenav");
+  sideNav.classList.toggle("open");
 });
 
 function closeNav() {
