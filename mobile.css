@@ -74,7 +74,7 @@
         align-items: last baseline;
     }
     .navbar-left{
-        position: fixed;
+        position: absolute;
         top: 13vw;
     }
     .text-size{
@@ -319,7 +319,7 @@
     margin-left: 50px;
   }
   /* Open state */
-  .sidenav .open {
+  .sidenav.open {
     width: 50vw; 
   }
   .dropdown{
