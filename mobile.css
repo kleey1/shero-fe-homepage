@@ -16,13 +16,11 @@
         height: 17vw;
         z-index: 1000;
         display: flex;
-        align-items:last baseline;
+        
         padding-bottom: 4vw;
         justify-content:space-between;
     }
     .search-btn-mobile{
-        position: absolute;
-        margin-left: 10vw;
         font-size: 3vw;
         background-color:#c0b9b400;
         border: none;
@@ -30,22 +28,23 @@
         padding: 0;
     }
     .menu-btn{
-        position: absolute;
         background-color:#c0b9b400;
         border: none;
         cursor: pointer;
         padding: 0;
+        bottom: 0;
     }
     .nav-mobile .search-mobile{
         display: none;
     }
     .nav-mobile .navbar-search{
         position: absolute;
-        margin-left: 18%;
+        bottom: 4vw;
         border-radius: 30px;
         height:8vw;
         width: 60vw;
-        bottom: 4vw;
+        right: 15vw;
+        z-index: 10000;
     }
     .nav-mobile .navbar-search input{
         border-radius: 30px;
@@ -65,16 +64,18 @@
     .nav-mobile img{
         width: 6vw;
     }
-    .navbar-center{
+    .nav-center-mobile{
+        
+        justify-content: center;
+        align-items: last baseline;
         font-size: 6vw;
-        margin-left: 38vw;
     }
     .navbar-left, .navbar-icons{
         gap:4vw;
         align-items: last baseline;
     }
     .navbar-left{
-        position: absolute;
+       width: auto;
         top: 13vw;
     }
     .text-size{

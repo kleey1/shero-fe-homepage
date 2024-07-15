@@ -95,8 +95,8 @@ function closeNav() {
 document.addEventListener("click", function (event) {
   if (!searchInput.contains(event.target) && !searchButton.contains(event.target)) {
       // Restore the navbar-center element
-      navbarCenter.style.display = 'block';
-      navbarRight.style.display = 'block';
+      navbarCenter.style.display = 'flex';
+      navbarRight.style.display = 'flex';
       searchBtn.style.display = 'block';
       // Hide the search-input element
       searchInput.style.display = 'none';
