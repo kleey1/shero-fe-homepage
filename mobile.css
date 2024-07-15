@@ -42,30 +42,35 @@
         bottom: 4vw;
         border-radius: 30px;
         height:8vw;
-        width: 60vw;
+        width: 70vw;
         right: 15vw;
         z-index: 10000;
     }
     .nav-mobile .navbar-search input{
         border-radius: 30px;
         height:8vw;
-        width: 60vw;
+        width: 70vw;
         padding-left: 3vw;
-        font-size: 3vw;
+        font-size: 4vw;
     }
     
     .nav-mobile input::placeholder{
         font-family:'Times New Roman', Times, serif;
         position:absolute;
         left: 3vw;
-        font-size: 3vw;
-        bottom: 2vw;
+        font-size: 4vw;
+        bottom: 1.9vw;
     }
+    .nav-mobile .search-button{
+        padding:0;
+        margin: 0;
+        top: 1.5vw;
+    }
+
     .nav-mobile img{
         width: 6vw;
     }
     .nav-center-mobile{
-        
         justify-content: center;
         align-items: last baseline;
         font-size: 6vw;
