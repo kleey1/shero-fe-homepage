@@ -87,13 +87,11 @@ searchButton.addEventListener("click", function () {
 menuButton.addEventListener("click", function () {
   var sideNav = document.getElementById("mySidenav");
   sideNav.classList.toggle("open");
-  console.log(window.getComputedStyle(sideNav).width);
 });
 
 closeButton.addEventListener("click", function () {
   var sideNav = document.getElementById("mySidenav");
   sideNav.classList.toggle("open");
-  console.log(window.getComputedStyle(sideNav).width);
 });
 
 document.addEventListener("click", function (event) {
