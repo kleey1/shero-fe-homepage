@@ -74,6 +74,7 @@ var searchInput = document.querySelector('.search-mobile');
 var menuButton = document.querySelector('.menu-btn');
 var information = document.getElementById('information')
 var more = document.getElementById('more');
+var closeButton = document.querySelector('.closebtn')
 
 // Add an event listener for the click event
 searchButton.addEventListener("click", function () {
@@ -86,11 +87,14 @@ searchButton.addEventListener("click", function () {
 menuButton.addEventListener("click", function () {
   var sideNav = document.getElementById("mySidenav");
   sideNav.classList.toggle("open");
+  console.log(window.getComputedStyle(sideNav).width);
 });
 
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-}
+closeButton.addEventListener("click", function () {
+  var sideNav = document.getElementById("mySidenav");
+  sideNav.classList.toggle("open");
+  console.log(window.getComputedStyle(sideNav).width);
+});
 
 document.addEventListener("click", function (event) {
   if (!searchInput.contains(event.target) && !searchButton.contains(event.target)) {
